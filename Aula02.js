@@ -124,13 +124,18 @@ for(let c1 = 0; c1 < 2; c1++){
 
 
 //Exercício 02 - Faça um algoritmo de multiplicação de matrizes: A X B = C.
-console.log("Exercício 01 - Faça um algoritmo de multiplicação de matrizes: A X B = C.");
+console.log("Exercício 02 - Faça um algoritmo de multiplicação de matrizes: A X B = C.");
 
-const matrizA2 = [[1,3],[2,5]];
-const matrizB2 = [[2,2],[0,1]];
-const matrizC2 = [[],[]];
-l2 = 0;
-for(let c2 = 0; c2 < 2; c2++){
-    matrizC2[l2][c2] = matrizA2[l2][c2] * matrizB2[l2][c2] + matrizA2[l2][c2+1] * matrizB2[l2+1][c2];
+const matrizA2 = [[1, 3], [2, 5]];
+const matrizB2 = [[2, 2], [0, 1]];
+const resultado = [[0, 0], [0, 0]];
+
+for(let i = 0; i < 2; i++){
+  for(let j = 0; j < 2; j++){
+    for(let k = 0; k < 2; k++){
+      resultado[i][j] += matrizA2[i][k] * matrizB2[k][j];
+    }
+  }
 }
-console.log(matrizC2[0]);
+
+console.log(resultado);
