@@ -74,14 +74,18 @@ Crie uma função que recebe uma String e retorna um Array com as
 palavras distintas da String recebida.*/
 
 let frase;
-let array = [];
+let array = new Array(60);
 let marcadorInicial = 0;
 let marcadorFinal = 0;
+let arrayContador = 0;
 let substring;
 frase = "Crie uma função que recebe uma String e retorna um Array com as palavras distintas da String recebida";
 console.log(frase.length)
 for(let contador = 0 ; contador < frase.length;){
     if(frase.charAt(contador == '')){
-        array.
+        marcadorFinal = contador;
+        array[arrayContador] = frase.substring(marcadorInicial,marcadorFinal);
+        marcadorInicial = marcadorFinal;
     }
 }
+console.log(array[0]);
