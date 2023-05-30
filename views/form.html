@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Formulário de Marcação de Consulta</title>
+  <title>Formulário para contato</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
 </head>
 <body>
 
 <div class="container">
-  <h1>Dados de contato</h1>
+  <h1>Formulário de contato</h1>
 
-  <form action="/submitName" method="post">
+  <form>
     <div class="row mb-3">
       <div class="col-md-6">
         <label for="nome">Nome Completo</label>
-        <input type="text" class="form-control" id="nome" value="{{contato.nome}}"required>
+        <input type="text" class="form-control" id="nome" required>
       </div>
       <div class="col-md-6">
         <label for="email">Email</label>
-        <input type="text" class="form-control" id="email" value="{{contato.email}}"required>
+        <input type="text" class="form-control" id="email" required>
       </div>
     </div>
     <div class="row mb-3">
       <div class="col-md-6">
         <label for="telefone">Telefone</label>
-        <input type="text" class="form-control" id="telefone" value="{{contato.telefone}}" required>
+        <input type="text" class="form-control" id="telefone" required>
       </div>
       <div class="col-md-6">
         <label for="mensagem">Mensagem</label>
-        <input type="text" class="form-control" id="mensagem" value="{{contato.mensagem}}" required>
+        <input type="text" class="form-control" id="mensagem" required>
       </div>
     </div>
-    <button type="submit" class="btn btn-primary">Enviar mensagem</button>
   </form>
 </div>
 
